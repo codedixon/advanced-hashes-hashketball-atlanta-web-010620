@@ -261,4 +261,23 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton
+  longest_name = 0
+  most_steals = 22
+  i = 0
+  while i < 5
+  if game_hash[:away][:players][i][:player_name].length > longest_name
+    name = game_hash[:away][:players][i][:player_name]
+    longest_name = game_hash[:away][:players][i][:player_name].length
+    elsif game_hash[:home][:players][i][:player_name].length > longest_name
+    name = game_hash[:home][:players][i][:player_name]
+    longest_name = game_hash[:home][:players][i][:player_name].length
+  end
+end
+  
+  if name == "Bismack Biyombo"
+    return true
+  else
+    return false
+  end
+end
   
