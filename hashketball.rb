@@ -251,3 +251,7 @@ j += 1
 end
 return high_scorer
 end
+
+def winning_team
+  game_hash[:home][:team_name]
+end
