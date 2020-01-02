@@ -232,10 +232,10 @@ def most_points_scored
   points = 0
   i = 0
 while i < 5 
-  if points < game_hash[:home][:players][i][:points]
-    points = game_hash[:home][:players][i][:points]
-  elsif points < game_hash[:away][:players][i][:points]
-  points = game_hash[:away][:players][i][:points]
+  if points < game_hash[:away][:players][i][:points]
+    points = game_hash[:away][:players][i][:points]
+  elsif points < game_hash[:home][:players][i][:points]
+  points = game_hash[:home][:players][i][:points]
   end
 i += 1 
 end
