@@ -231,7 +231,6 @@ end
 def most_points_scored
   points = 0
   i = 0
-  high_scorer = game_hash[:home][:players][0][:player_name]
 while i < 5 
   if points < game_hash[:home][:players][i][:points]
     points = game_hash[:home][:players][i][:points]
@@ -242,6 +241,7 @@ i += 1
 end
 
 j = 0 
+high_scorer = game_hash[:home][:players][0][:player_name]
 while j < 5 
   if points == game_hash[:home][:players][j][:points]
   high_scorer = game_hash[:home][:players][j][:player_name]
