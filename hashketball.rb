@@ -255,3 +255,7 @@ end
 def winning_team
   game_hash[:home][:team_name]
 end
+
+def player_with_longest_name
+  game_hash[:away][:players][1][:player_name]
+end
