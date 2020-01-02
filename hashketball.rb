@@ -245,7 +245,7 @@ high_scorer = game_hash[:home][:players][0][:player_name]
 while j < 5 
   if points == game_hash[:home][:players][j][:points]
   high_scorer = game_hash[:home][:players][j][:player_name]
-  elsif points == [:away][:players][j][:points]
+  elsif points == game_hash[:away][:players][j][:points]
   high_scorer = game_hash[:away][:players][j][:player_name]
   end
 j += 1 
